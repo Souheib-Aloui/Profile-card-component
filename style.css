@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-grayish-blues: hsl(227, 10%, 46%, 0.6);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+  overflow: hidden;
+  
+}
+img {
+  max-width: 100%;
+  width: 100%;
+
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+  
+}
+
+.container article:first-child {
+  position: relative;
+}
+.container article:first-child img {
+  border-radius: 8px 8px 0 0;
+}
+.container article:first-child div img {
+  border-radius: 50%;
+  width: 7rem;
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  transform: translateX(-50%);
+  border: 4px solid white;
+
+}
+.container article:nth-child(2) {
+  text-align: center;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid  var(--Dark-grayish-blues);
+  
+}
+.container article:nth-child(2) h1 {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+}
+.container article:nth-child(2) span {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+}
+.container article p {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  color: var(--Dark-grayish-blue);
+ 
+}
+.container article:nth-child(3) ul {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Very-dark-desaturated-blue);
+  text-align: center;
+}
+li {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+}
+ li span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--Dark-grayish-blues);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+.bg-top {
+  position: absolute;
+  top: -40%;
+  left: -9%;
+  z-index: -1;
+ 
+}
+.bg-bottom {
+  position: absolute;
+  bottom: -40%;
+  right: -9%;
+  z-index: -1;
+  
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
